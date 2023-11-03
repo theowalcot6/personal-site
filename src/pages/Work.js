@@ -14,7 +14,7 @@ import PropTypes from 'prop-types'; // Import PropTypes
 
 import Footer from "../components/Footer";
 
-const Work = ({position}) => {
+const Work = ({position, extra, footer}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -32,8 +32,8 @@ const Work = ({position}) => {
   return (
     <>
     <div className={`Work-Carousel ${position}`}>
-        <h2 className='work-carousel-title'>Work Examples</h2>
-        <div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        <h6 className={`work-carousel-title ${extra} `}>Work Examples</h6>
+        <div className={`carousel ${extra} `} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {ProjectData.map((project, index) => (
             <div className="carousel-slide" key={index}>
               <img className='carousel-img' src={project.logo} alt={`Carousel ${index + 1}`} />
@@ -50,13 +50,15 @@ const Work = ({position}) => {
           {currentIndex !== ProjectData.length - 1 ? <button className="next-button" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button> : <button className="next-button-disabled" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button>}
         </div>
       </div>
-      <Footer styling={'free'} />
+      {footer === 'no' ? null : <Footer styling={'free'} />}
       </>
   )
 };
 
 Work.propTypes = {
   position: PropTypes.string,
+  extra: PropTypes.string,
+
 };
  
 export default Work;

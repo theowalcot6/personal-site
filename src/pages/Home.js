@@ -56,7 +56,7 @@ function Home() {
           <p className='title'>Product Manager, Data Scientist and Web Developer</p>
           <div className='Home-CTAs'>
             <a href={require("../static/Theo_Walcot_CV.pdf")} download="Theo's CV" className='primary-button-home-inner'><button className='primary-button-home'>Download CV</button></a>
-            <button className='secondary-button-home'><Link to='/projects'>My Work</Link></button>
+            <Link to='/projects' className='secondary-button-home-link'><button className='secondary-button-home'>My Projects</button></Link>
           </div>
         </div>
         <button onClick={() => scrollToNextSection(section1Ref)} id='s1' className='scroll-down-button'><FontAwesomeIcon icon={faArrowDown} /></button>
@@ -111,8 +111,8 @@ function Home() {
         {currentIndex !== 2 ? <button className="next-button" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button> : <button className="next-button-disabled" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button>}
         </div>
       </div>
+      <Work position='p1' footer='no' />
       <Footer styling={'three-hundred'} />
-      <Work position='p1' />
     </>
     );
   }
