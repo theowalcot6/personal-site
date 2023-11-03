@@ -1,0 +1,24 @@
+.Projects {
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    width:calc(100vw - 80px);
+    min-height:calc(100vh - 80px);
+    background-color:#f0f0f0;
+    padding:40px;
+}
+
+.Projects-header {
+    color: #333333;
+    padding-top:40px;
+    margin-bottom:40px;
+}
+
+.ProjectCard-container {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    width:100vw;
+    gap:40px;
+    flex-wrap: wrap;
+}

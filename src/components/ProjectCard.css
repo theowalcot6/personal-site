@@ -1,0 +1,64 @@
+/* Whole container */
+.projectcard-container {
+    padding:20px;
+    background-color:#f9f9f9;
+    width:25%;
+    height: 500px;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    position:relative;
+    border-radius: 5px;
+    min-width: 350px;
+  }
+
+  
+  .projectcard-image {
+    background-color:#f9f9f9;
+    border-radius: 2px;
+    background-size:cover;
+    background-position:center;
+    height:40%;
+    width:100%;
+  }
+  
+  /* Lower */
+  
+  .projectcard-title {
+    color: #333333;
+    font-size:22px;
+  }
+  
+  .projectcard-text {
+    color: #333333;
+    font-size:15px;
+    font-weight:400;
+    margin:0px;
+    font-family:Inter, sans-serif;
+  }
+
+  .bold {
+    font-weight:600;
+    margin-top:10px;
+  }
+  
+  .projectcard-link {
+    font-size:15px;
+    font-weight:700;
+    position:absolute;
+    bottom:50px;
+    color: #333333;
+  }
+
+.role-container {
+  display:flex;
+  flex-direction:row;
+  gap:10px;
+}
+
+  .projectcard-role {
+    font-size:12px;
+    background-color:rgb(184, 248, 248);
+    border-radius:20px;
+    padding:6px 12px 6px 12px;
+  }

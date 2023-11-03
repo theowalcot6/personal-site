@@ -1,0 +1,141 @@
+/* About Page */
+
+.about-img {
+    border-radius:50%;
+    z-index:99998;
+    position:relative;
+  }
+  
+  .about-container {
+    padding-top:100px;
+    padding-bottom:6%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  
+  .about-1st {
+    min-width:200px;
+    padding-right:5%;
+    padding-left:5%;
+    max-width:80%;
+    width:35%;
+    line-height:1.5;
+  }
+  
+  .about-2nd {
+    min-width:200px;
+    max-width:80%;
+    padding-right:5%;
+    padding-left:5%;
+    width:35%;
+    line-height:1.5;
+  }
+  
+  @media screen and (max-width:999px) {
+    .about-1st {
+      width:100%;
+    }
+  
+    .about-2nd {
+      width:80%;
+    }
+  }
+  
+  .a-little {
+    color:#A5A5A5;
+    font-family: Karla, sans-serif;
+    margin:0px;
+    font-size:16px;
+    padding-top:10px;
+  }
+  
+  .hi {
+    color:#4F4F4F;
+    margin:0px;
+    padding-top:10px;
+    z-index:9999;
+    position:relative;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size:30px;
+  }
+  
+  .aboutme {
+    color:#4F4F4F;
+    font-size:16px;
+    z-index:9999;
+    position:relative;
+    font-family: "Inter", sans-serif;
+    margin-bottom:20px;
+  }
+  
+  .about-container {
+    background-color:white;
+    position:relative;
+  }
+  
+  .experience-header {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#4F4F4F;
+    font-size:14px;
+    position:relative;
+    z-index:9999;
+    margin-bottom:3px;
+    margin-top:16px;
+  }
+  
+  .experience-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#4F4F4F;
+    font-size:14px;
+    margin-top:3px;
+    z-index:99999;
+    position:relative;
+  }
+  
+  .download-cv {
+    z-index:99999;
+    position:relative;
+    color:#6b6b6b;
+    font-family: "Inter", sans-serif;
+    font-size:16px;
+  }
+  
+  .value-header {
+    font-size:18px;
+    color:#4F4F4F;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom:10px;
+    z-index:99999;
+    position:relative;
+  }
+  
+  .value {
+    font-size:16px;
+    color:#4F4F4F;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top:10px;
+    z-index:99999;
+    position:relative;
+  }
+  
+  .img {
+    min-width:200px;
+    width:60%;
+    z-index:9999;
+    position:relative;
+    border-radius:3%;
+    margin-top:3%;
+  }
+  

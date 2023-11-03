@@ -1,0 +1,394 @@
+/* Home Page Styling */
+
+/* First Section */
+
+.Home {
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    font-family: Roboto, sans-serif;
+    gap:15%;
+    background-image: url('../static/background.jpg') ;
+    flex-wrap:wrap;
+    padding:40px;
+  }
+
+  @media screen and (max-width: 970px) {
+    .Home {
+      gap:5%;
+    }
+  }
+
+  @media screen and (max-width: 875px) {
+    .Home {
+      align-items: flex-start;
+      top:100px;
+      padding-bottom:200px;
+
+    }
+  }
+
+  .Home img {
+    width:360px;
+  }
+
+  @media screen and (max-width: 389px) {
+    .Home img {
+      width:100%;
+
+    }
+  }
+
+  .Home > * {
+    text-align:center;
+    color: #333333;
+    letter-spacing:1.5px;
+    vertical-align:middle;
+  }
+
+.name {
+    margin:0px;
+    margin-bottom:10px;
+    font-size:52px;
+    text-align:left;
+  }
+  
+  .title {
+    font-size:14px;
+    text-align:left;
+    margin:0px;
+    margin-top:10px;
+  }
+  
+  .jobs {
+    font-size:15px;
+    margin:5px;
+  }
+
+  .scroll-down-button {
+    cursor:pointer;
+    background-color:transparent;
+    border-radius:50%;
+    height:60px;
+    width:40px;
+  }
+
+  #s1 {
+    border: solid 1px #333333;
+    color:#333333;
+    position: absolute;
+    bottom: 40px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  #s2 {
+    border: solid 1px #ffffff;
+    color:white;
+    position: absolute;
+    bottom: 40px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+
+  .Home-CTAs {
+    display:flex;
+    flex-direction:row;
+    gap:5px;
+    margin-top:30px;
+  }
+
+  @media screen and (max-width: 475px) {
+    .Home-CTAs {
+      margin-top:10px;
+    }
+  }
+
+  .primary-button-home {
+    background-color: #ed4824;
+    height:40px;
+    width:120px;
+    border-radius:5px;
+    border:0px;
+    font-size:14px;
+    cursor:pointer;
+    color:white;
+  }
+
+  .primary-button-home:hover {
+    background-color: #da352d;
+  }
+
+  .primary-button-home-inner {
+    text-decoration: none;
+    color:white;
+    display:flex;
+    height:40px
+  }
+
+  .secondary-button-home {
+    background-color: transparent;
+    height:40px;
+    width:120px;
+    border-radius:5px;
+    border:1px solid #333333;
+    font-size:14px;
+    cursor:pointer;
+    color:#333333;
+  }
+
+  .secondary-button-home a {
+    text-decoration: none;
+    color:#333333;
+  }
+
+  .secondary-button-home-link {
+    height:40px;
+    display:flex;
+    text-decoration:none;
+    color:#333333;
+  }
+
+  .secondary-button-home:hover {
+    background-color: rgba(255, 115, 0, 0.848);
+  }
+
+  /* 2nd Section */
+
+  .Services {
+    height:calc(100vh - 100px);
+    width:calc(100vw - 100px);
+    position:absolute;
+    top:100vh;
+    left:0px;
+    right:0px;
+    background-color:#ed4824;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    gap:50px;
+  }
+
+  #s3 {
+    border: solid 1px #ffffff;
+    color:white;
+    position: absolute;
+    top: 120px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .skills-container h6 {
+    font-size:24px;
+    margin:0px;
+    width:400px;
+    color:white;
+  }
+  
+  .skill {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  
+  .skill-name {
+    font-weight: 500;
+    font-size:10px;
+    color:white;
+  }
+  
+  .skills-image {
+    filter: grayscale(100%);
+  }
+
+  @media screen and (max-width: 950px) {
+    .skills-image {
+      display:none;
+    }
+  }
+
+  .skill-bar {
+    background-color: #c0bbbba0;
+    height: 4px;
+    border-radius: 5px;
+    position: relative;
+    width:400px;
+  }
+
+  @media screen and (max-width: 420px) {
+    .skill-bar {
+      width:90vw;
+    }
+
+    .skills-container {
+      padding:40px;
+    }
+
+    .skills-container h6 {
+      width:90vw;
+    }    
+
+    .skills-container {
+      width:90vw;
+    }
+
+    .skill-section-CTAs {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .skill-level {
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .bluebar {
+    background-color: #01377d;
+  }
+
+  .lightbluebar {
+    background-color: #009dd1;
+  }
+
+  .aquabar {
+    background-color: #97e7f5;
+  }
+
+  .lightgreenbar {
+    background-color: #7ed348
+  }
+
+  .greenbar {
+    background-color: #26b170
+  }
+
+  .skill-level-100 {
+    width: 100%;
+  }
+  
+  .skill-level-90 {
+    width: 90%;
+  }
+  
+  .skill-level-80 {
+    width: 80%;
+  }
+
+  .skill-level-60 {
+    width: 60%;
+  }
+
+  .third-button-home {
+    background-color: transparent;
+    height:40px;
+    width:120px;
+    border-radius:5px;
+    border:1px solid #ffffff;
+    color:#ffffff;
+    font-size:14px;
+    cursor:pointer;
+  }
+
+  .third-button-home:hover {
+    font-weight:800;
+  }
+
+  .skill-section-CTAs {
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    gap:20px;
+  }
+
+  /* 3rd Section */
+
+
+  .Carousel {
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    top:200vh;
+    left:0px;
+    right:0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s;
+    width:100vw;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100vw;
+  }
+
+  .Work-Home {
+    position:absolute;
+    top:200vh;
+  }
+
+  
+  .prev-button, .next-button {
+    background-color: transparent;
+    cursor: pointer;
+    width:40px;
+    height:40px;
+    border: 1px solid #333333;
+    border-radius:50%;
+  }
+  
+  .prev-button {
+    right: 50%;
+  }
+  
+  .next-button {
+    left: 50%;
+  }
+
+  .carousel-buttons {
+    display:flex;
+    gap:20px;
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .prev-button-disabled, .next-button-disabled {
+    cursor:not-allowed;
+    width:40px;
+    height:40px;
+    border: 1px solid #333333;
+    border-radius:50%;
+    background-color: #f0f0f0; /* Background color */
+    color: #ccc; /* Text color */
+    cursor: not-allowed; /* Change cursor to 'not-allowed' */
+    opacity: 0.7; /* Reduce opacity */
+  }
+
+  .prev-button-disabled {
+    right: 50%;
+}
+
+.next-button-disabled {
+    left:50%;
+}
