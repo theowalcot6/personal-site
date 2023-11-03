@@ -8,6 +8,12 @@ import { Link } from "react-router-dom";
 
 import ProjectData from "../components/ProjectData";
 
+import React from 'react' 
+
+import PropTypes from 'prop-types'; // Import PropTypes
+
+import Footer from "../components/Footer";
+
 const Work = ({position}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -24,26 +30,33 @@ const Work = ({position}) => {
   };
 
   return (
-    <div class={`Work-Carousel ${position}`}>
-        <h2 class='work-carousel-title'>Work Examples</h2>
+    <>
+    <div className={`Work-Carousel ${position}`}>
+        <h2 className='work-carousel-title'>Work Examples</h2>
         <div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {ProjectData.map((project, index) => (
             <div className="carousel-slide" key={index}>
-              <img class='carousel-img' src={project.logo} alt={`Carousel ${index + 1}`} />
-              <div class='carousel-summary'>
-                <p class='carousel-title'>{project.secondary_title}</p>
-                <p class='carousel-description'>{project.description}</p>
-                <Link class='carousel-link' to={project.links}><p>Find out more</p></Link>
+              <img className='carousel-img' src={project.logo} alt={`Carousel ${index + 1}`} />
+              <div className='carousel-summary'>
+                <p className='carousel-title'>{project.secondary_title}</p>
+                <p className='carousel-description'>{project.description}</p>
+                <Link className='carousel-link' to={project.links}><p>Find out more</p></Link>
               </div>
             </div>
           ))}
         </div>
-        <div class='carousel-buttons'>
-          {currentIndex !== 0 ? <button class="prev-button" onClick={prevSlide}><FontAwesomeIcon icon={faArrowLeft} /></button> : <button class="prev-button-disabled" onClick={prevSlide}><FontAwesomeIcon icon={faArrowLeft} /></button>}
-          {currentIndex !== ProjectData.length - 1 ? <button class="next-button" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button> : <button class="next-button-disabled" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button>}
+        <div className='carousel-buttons'>
+          {currentIndex !== 0 ? <button className="prev-button" onClick={prevSlide}><FontAwesomeIcon icon={faArrowLeft} /></button> : <button className="prev-button-disabled" onClick={prevSlide}><FontAwesomeIcon icon={faArrowLeft} /></button>}
+          {currentIndex !== ProjectData.length - 1 ? <button className="next-button" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button> : <button className="next-button-disabled" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button>}
         </div>
       </div>
+      <Footer styling={'free'} />
+      </>
   )
+};
+
+Work.propTypes = {
+  position: PropTypes.string,
 };
  
 export default Work;

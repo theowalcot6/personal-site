@@ -3,13 +3,14 @@ import React from 'react';
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ProjectPage from './pages/ProjectPage';
-import Home from './pages/Home.js'
-import About from './pages/About.js'
-import Work from './pages/Work.js'
+import Home from './pages/Home.js';
+import About from './pages/About.js';
+import Work from './pages/Work.js';
 import Projects from './pages/Projects';
 import Navigation from './Navigation.js';
 
-export function App() {
+
+const App = () => {
   return (
           <div className="App">
               <Router>
@@ -23,5 +24,7 @@ export function App() {
                 </Routes>
               </Router>
           </div>
-)
+  )
 }
+
+export default App;

@@ -16,38 +16,38 @@ function Navigation() {
 
 
   return (
-        <ul class="Navigation">
-          <div class='home-container'>
+        <ul className="Navigation">
+          <div className='home-container'>
             <NavLink className="nav-link" to="/" onClick={() => {setIsNavExpanded(false)}}>
               THEO WALCOT
             </NavLink>
           </div>
-          <div class='nav-container'>
-            <div class={isNavExpanded ? "nav-normal expanded" : "nav-normal"}>
+          <div className='nav-container'>
+            <div className={isNavExpanded ? "nav-normal expanded" : "nav-normal"}>
               <li className="nav-item">
-              <div class={`nav-background ${pathname === '/work' ? 'back-active' : ''}`}>
+              <div className={`nav-background ${pathname === '/work' ? 'back-active' : ''}`}>
                 <NavLink className="nav-link" to="/work" onClick={() => {setIsNavExpanded(false)}}>
                   Work
                 </NavLink>
                 </div>
               </li>
               <li className='nav-item'>
-              <div class={`nav-background ${pathname === '/projects' ? 'back-active' : ''}`}>
+              <div className={`nav-background ${pathname === '/projects' ? 'back-active' : ''}`}>
                 <NavLink className="nav-link" to="/projects" onClick={() => {setIsNavExpanded(false)}}>
                   Projects
                 </NavLink>
               </div>
               </li>
               <li className="nav-item">
-              <div class={`nav-background ${pathname === '/about' ? 'back-active' : ''}`}>
+              <div className={`nav-background ${pathname === '/about' ? 'back-active' : ''}`}>
                 <NavLink className="nav-link" to="/about" onClick={() => {setIsNavExpanded(false)}}>
                   About
                 </NavLink>
                 </div>
               </li>
             </div>
-            <div class='button-holder'>
-              <a href={require("./static/Theo_Walcot_CV.pdf")} download="Theo's CV" class='primary-button-home-inner'><button class='primary-button-home'>Hire Me!</button></a>
+            <div className='button-holder'>
+              <a href={require("./static/Theo_Walcot_CV.pdf")} download="Theo's CV" className='primary-button-home-inner'><button className='primary-button-home'>Hire Me!</button></a>
             </div>
             <div className='nav-responsive'>
               <button

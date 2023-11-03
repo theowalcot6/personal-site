@@ -3,13 +3,13 @@ import Footer from "../components/Footer";
 import ProjectData from "../components/ProjectData";
 import { useLocation } from "react-router-dom"; // Import useLocation
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown} from '@fortawesome/free-solid-svg-icons';
-
 import { useRef } from "react";
 
 import './ProjectPage.css'
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown} from '@fortawesome/free-solid-svg-icons';
 function ProjectPage() {
     const section1Ref = useRef();
 
@@ -32,7 +32,7 @@ function ProjectPage() {
 
     if (!project) {
         // Handle the case where the project is not found
-        return <div class='Error'><p>Project not found</p></div>;
+        return <div className='Error'><p>Project not found</p></div>;
     }
     return (
         <div className="ProjectPage">
@@ -59,7 +59,8 @@ function ProjectPage() {
             <img className='big-logo' src={project.big_logo} alt='big-logo'></img>
             <button className='code-button'><a target='_blank' rel="noreferrer" href={project.code}>View Code</a></button>
             </div>
-            <button onClick={() => scrollToNextSection(section1Ref)} id='s1' class='scroll-down-button'><FontAwesomeIcon icon={faArrowDown} /></button>      </div>
+            <button onClick={() => scrollToNextSection(section1Ref)} id='s1' className='scroll-down-button'><FontAwesomeIcon icon={faArrowDown} /></button>
+            </div>
         <div className='title-section' ref={section1Ref}>
             <div className='left-title'>
             <h1>{project.title}</h1>
