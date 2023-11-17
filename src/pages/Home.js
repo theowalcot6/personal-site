@@ -111,7 +111,7 @@ function Home() {
         {currentIndex !== 2 ? <button className="next-button" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button> : <button className="next-button-disabled" onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} /></button>}
         </div>
       </div>
-      <Work position='p1' footer='no' />
+      <Work position='p1' footer='no' added='/work/' />
       <Footer styling={'three-hundred'} />
     </>
     );
