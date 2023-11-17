@@ -14,7 +14,7 @@ import PropTypes from 'prop-types'; // Import PropTypes
 
 import Footer from "../components/Footer";
 
-const Work = ({position, extra, footer}) => {
+const Work = ({position, extra, footer, added}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -40,7 +40,7 @@ const Work = ({position, extra, footer}) => {
               <div className='carousel-summary'>
                 <p className='carousel-title'>{project.secondary_title}</p>
                 <p className='carousel-description'>{project.description}</p>
-                <Link className='carousel-link' to={project.links}><p>Find out more</p></Link>
+                <Link className='carousel-link' to={`${added}${project.links}`}><p>Find out more</p></Link>
               </div>
             </div>
           ))}
@@ -58,6 +58,7 @@ const Work = ({position, extra, footer}) => {
 Work.propTypes = {
   position: PropTypes.string,
   extra: PropTypes.string,
+  added: PropTypes.string
 
 };
  
