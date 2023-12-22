@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 import './Footer.css'
 import PropTypes from 'prop-types'; // Import PropTypes
@@ -17,7 +19,7 @@ function Footer({styling}) {
             </div>
             <div className='lower-grouped'>
               <div className='lower-top'>LET&apos;S CONNECT 🤝</div>
-              <div className='lower-lower'><a className='lower-lower' href='https://www.linkedin.com/in/theowalcot/' target='_blank' rel="noreferrer">Linkedin</a> | <a className='lower-lower' href={require("../static/Theo_Walcot_CV.pdf")} download="Theo's CV">Resume</a> | <a className='lower-lower' href='/work'>Work</a> | <a className='lower-lower' href='https://github.com/theowalcot6' target='_blank' rel="noreferrer">Github</a> | <a className='lower-lower' href='https://www.kaggle.com/theowalcot' target='_blank' rel="noreferrer">Kaggle</a></div>
+              <div className='lower-lower'><a className='lower-lower' href='https://www.linkedin.com/in/theowalcot/' target='_blank' rel="noreferrer">Linkedin</a> | <a className='lower-lower' href={require("../static/Theo_Walcot_CV.pdf")} download="Theo's CV">Resume</a> | <Link className='lower-lower' href='/work'>Work</Link> | <a className='lower-lower' href='https://github.com/theowalcot6' target='_blank' rel="noreferrer">Github</a> | <a className='lower-lower' href='https://www.kaggle.com/theowalcot' target='_blank' rel="noreferrer">Kaggle</a></div>
             </div>
             <div className='lower-grouped'>
               <div className='lower-top'>@2023 THEO WALCOT</div>
