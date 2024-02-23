@@ -67,7 +67,7 @@ function Home() {
           <img src={Study} alt='study' width='480'/>
         </div>
         <div className="skills-container">
-          <h6>8 years experience building high-className technologies!</h6>
+          <h6>8 years experience building high-class technologies!</h6>
           <div className="skill">
             <div className="skill-name">PYTHON (FLASK AND DJANGO)</div>
             <div className="skill-bar">
